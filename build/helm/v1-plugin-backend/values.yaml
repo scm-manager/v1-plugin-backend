@@ -1,0 +1,50 @@
+# Default values for plugin-center-api.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: scmmanager/v1-plugin-backend
+  tag: 1.60.0
+  pullPolicy: IfNotPresent
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  path: /
+  annotations:
+    kubernetes.io/ingress.class: traefik
+    kubernetes.io/tls-acme: "true"
+  hosts:
+    - plugins.scm-manager.org
+
+  tls:
+    - secretName: v1-plugin-backend-tls-secret
+      hosts:
+        - plugins.scm-manager.org
+
+persistence:
+  enabled: true
+  accessMode: ReadWriteOnce
+  size: 40Gi
+
+resources:
+  limits:
+    memory: 256Mi
+  requests:
+    cpu: 100m
+    memory: 256Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
