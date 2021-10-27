@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-    <modelVersion>4.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>sonia.scm</groupId>
-        <artifactId>scm</artifactId>
-        <version>1.60</version>
-    </parent>
+  <parent>
+    <groupId>sonia.scm</groupId>
+    <artifactId>scm</artifactId>
+    <version>1.60</version>
+  </parent>
 
   <groupId>sonia.scm</groupId>
   <artifactId>scm-plugin-backend</artifactId>
@@ -32,21 +32,21 @@
       <version>1.1</version>
       <scope>provided</scope>
     </dependency>
-    
+
     <!-- logging -->
-    
+
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>jcl-over-slf4j</artifactId>
       <version>${slf4j.version}</version>
     </dependency>
-    
+
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>log4j-over-slf4j</artifactId>
       <version>${slf4j.version}</version>
     </dependency>
-    
+
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
@@ -88,7 +88,7 @@
       <artifactId>imgscalr-lib</artifactId>
       <version>4.2</version>
     </dependency>
-    
+
     <!-- security -->
 
     <dependency>
@@ -96,13 +96,13 @@
       <artifactId>shiro-web</artifactId>
       <version>${shiro.version}</version>
     </dependency>
-            
+
     <dependency>
       <groupId>org.apache.shiro</groupId>
       <artifactId>shiro-guice</artifactId>
       <version>${shiro.version}</version>
     </dependency>
-    
+
     <dependency>
       <groupId>org.apache.shiro</groupId>
       <artifactId>shiro-ehcache</artifactId>
@@ -156,13 +156,13 @@
     </plugins>
 
     <finalName>scm-plugin-backend</finalName>
-</build>
+  </build>
 
   <repositories>
-      <repository>
-          <id>packages.scm-manager.org</id>
-          <url>https://packages.scm-manager.org/repository/releases/</url>
-      </repository>
+    <repository>
+      <id>packages.scm-manager.org</id>
+      <url>https://packages.scm-manager.org/repository/releases/</url>
+    </repository>
   </repositories>
 
 </project>
