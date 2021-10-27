@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration>
+    <scann-interval>30m</scann-interval>
+
+    <multithreaded>true</multithreaded>
+
+    <news-settings>
+        <url>https://scm-manager.org/rss.xml</url>
+        <cache-enabled>false</cache-enabled>
+        <copy-request-headers>false</copy-request-headers>
+        <copy-response-headers>false</copy-response-headers>
+    </news-settings>
+
+    <excludes>
+        <!-- exclude milestone releases -->
+        <exclude>.*-M.\.jar</exclude>
+        <!-- exclude milestone snapshots -->
+        <exclude>.*-M.-SNAPSHOT\.jar</exclude>
+        <exclude>.*-M.-[0-9]+\.[0-9]+-[0-9]+\.jar</exclude>
+        <!-- exclude source jars -->
+        <exclude>.*-sources\.jar</exclude>
+        <!-- exclude javadoc jars -->
+        <exclude>.*-javadoc\.jar</exclude>
+        <!-- exclude core plugins -->
+        <exclude>.*scm-hg-plugin.*.jar</exclude>
+        <exclude>.*scm-svn-plugin.*.jar</exclude>
+        <exclude>.*scm-git-plugin.*.jar</exclude>
+    </excludes>
+
+    <directories>
+        <directory>/var/lib/nexus/storage/releases</directory>
+        <directory>/var/lib/nexus/storage/snapshots</directory>
+    </directories>
+
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://repo1.maven.org/maven2/</url>
+        </repository>
+        <repository>
+            <id>scm.maven</id>
+            <url>https://packages.scm-manager.org/repository/public/</url>
+        </repository>
+    </repositories>
+
+</configuration>

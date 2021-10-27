@@ -9,12 +9,13 @@ RUN mvn package
 
 FROM tomcat:8.5.72-jdk8-openjdk-slim-bullseye
 
-COPY config/config.xml /etc/v1-plugin-backend.xml
+COPY build/config.xml /etc/v1-plugin-backend.xml
 ENV SCMBACKEND_CONFIG /etc/v1-plugin-backend.xml
 
 VOLUME /var/lib/v1-plugin-backend
-ENV SCMBACKEND_HOME /var/lib/v1-plugin-backend
+ENV SCMBACKEND_HOME /var/lib/plugin-backend
 
+COPY build/redirect /usr/local/tomcat/webapps/ROOT
 COPY --from=builder /src/target/scm-plugin-backend.war /usr/local/tomcat/webapps/scm-plugin-backend.war
 
 VOLUME /var/lib/nexus
