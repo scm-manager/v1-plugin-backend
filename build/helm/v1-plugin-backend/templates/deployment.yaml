@@ -15,9 +15,6 @@ spec:
       labels:
         app.kubernetes.io/name: {{ include "v1-plugin-backend.name" . }}
         app.kubernetes.io/instance: {{ .Release.Name }}
-      annotations:
-        prometheus.io/scrape: "true"
-        prometheus.io/port: "8080"
     spec:
     {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
