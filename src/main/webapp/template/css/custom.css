@@ -1,0 +1,226 @@
+/**
+ * Copyright (c) 2010, Sebastian Sdorra
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright notice,
+ *    this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution.
+ * 3. Neither the name of SCM-Manager; nor the names of its
+ *    contributors may be used to endorse or promote products derived from this
+ *    software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE FOR ANY
+ * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * http://bitbucket.org/sdorra/scm-manager
+ *
+ */
+
+body{
+	font-size:16px;
+	line-height: 1.75;
+	font-weight:300;
+}
+h1, h2, h3, h4, h5, h6, #nav-below {
+	font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	border-bottom: unset;
+	box-shadow: none;
+}
+h1 {
+	font-weight:600;
+}
+h1 a:link, h1 a:visited, h2 a:link, h2 a:visited, h3 a:link, h3 a:visited, h4 a:link, h4 a:visited, h5 a:link, h5 a:visited, h6 a:link, h6 a:visited {
+    color: #33b2e8;
+}
+h2{
+	color: #333;
+	font-weight: 400;
+}
+h1 + .entry-meta{
+border-bottom: 1px solid #ddd;
+padding-bottom: 20px;
+}
+
+/* Links */
+
+a:link, a:visited {
+color: #33b2e8;
+}
+
+/* Header */ 
+
+#branding {
+	background: url(https://www.scm-manager.org/wp-content/uploads/2019/06/scmManagerHero.jpg);
+}
+#navigation {
+    padding: 40px 0 0;
+}
+
+/* Main Content */ 
+
+#main {
+    background: #fff;
+}
+
+#content ul {
+	padding-left: 0;
+}
+#content ul li {
+    list-style-type: disc;
+	list-style-position: inside;
+	margin-bottom: 15px;
+}
+
+/* Blog */ 
+
+#content .entry-title, #portfolio .entry-title {
+border: 0;
+}
+.entry-meta{
+font-size: 14px;
+color: #999;
+}
+#nav-below{
+overflow:visible;
+}
+#nav-below a{
+font-weight: 600;
+color: #fff;
+background: #999;
+text-shadow: none;
+padding: 10px 15px;
+border-radius: 5px;
+}
+.reply a:link, #commentform #submit {
+    font-size: 12px;
+    color: #fff;
+    background: #33b2e8;
+    box-shadow: none;
+    border-color: #33b2e8;
+    padding: 5px 10px;
+    text-shadow: none;
+}
+
+/* Sidebar */
+
+.widget-container h3{
+	border-bottom:0;
+	margin-bottom: 0;
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.widget-container ul li a {
+	font-size: 15px;
+	color: #33b2e8;
+	line-height: 1.8;
+	padding: 0;
+}
+#sidebar #text-2, #sidebar #text-7 {
+	border-top:1px solid #ddd;
+	padding-top:30px;
+}
+#sidebar #text-2 .textwidget, #sidebar #text-3 .textwidget{ 
+	width: 235px;
+	margin: auto;
+	padding: 20px 0;
+	background: #eee;
+	text-align: center;
+	border-radius: 5px;
+}
+#sidebar #text-6 p, #sidebar #text-7 p {
+	color: #33b2e8;
+}
+#sidebar #text-7 .button{
+font-size: 12px;
+    color: #fff;
+    background: #33b2e8;
+    box-shadow: none;
+    border-color: #33b2e8;
+	margin-top: 10px;
+    padding: 5px 10px;
+    text-shadow: none;
+	border-radius: 5px;
+	display: inline-block;
+}
+#sidebar #text-7 img {
+	max-width: 130px;
+}
+#social4i{
+	position: relative; 
+	display: block;
+	width: 55%;
+	margin: auto;
+}
+
+/* Footer */
+
+footer#colophon {
+border-top: 1px solid #333;
+background: #111;
+}
+
+footer span {
+color: #999;
+}
+
+
+h3.ui-accordion-header {
+  padding-bottom: 0 !important;
+}
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+	color: #33b2e8;
+}
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+    color: #00c79b;
+}
+.ui-accordion #content h1, .ui-accordion #content h2, .ui-accordion #content h3, .ui-state-default, .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    background: transparent;
+    font-weight: 600;
+}
+.ui-widget-content {
+    border: none;
+    background: transparent;
+    font-weight: 400;
+    font-size: 16px;
+}
+.ui-accordion .ui-accordion-content{
+    border-bottom: 1px solid #ddd;
+    /padding-bottom: 40px !important;/
+    border-radius: 0;
+}
+.ui-accordion-content a{
+    color: #fff !important;
+    background: #33b2e8;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 5px;
+
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus{
+   color:#7fe3cd;
+}
+.ui-accordion .ui-accordion-header .ui-icon, .ui-state-active .ui-icon {
+    background-image: url(https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/images/ui-icons_222222_256x240.png);
+}
