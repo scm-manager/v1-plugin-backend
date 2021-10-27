@@ -12,7 +12,7 @@
   <groupId>sonia.scm</groupId>
   <artifactId>scm-plugin-backend</artifactId>
   <packaging>war</packaging>
-  <version>1.60.0</version>
+  <version>1.60.1</version>
   <name>${project.artifactId}</name>
 
   <dependencies>

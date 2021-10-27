@@ -5,7 +5,7 @@ replicaCount: 1
 
 image:
   repository: scmmanager/v1-plugin-backend
-  tag: 1.60.0
+  tag: 1.60.1
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
