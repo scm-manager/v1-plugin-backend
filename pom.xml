@@ -12,7 +12,7 @@
   <groupId>sonia.scm</groupId>
   <artifactId>scm-plugin-backend</artifactId>
   <packaging>war</packaging>
-  <version>1.60</version>
+  <version>1.60.0</version>
   <name>${project.artifactId}</name>
 
   <dependencies>
@@ -120,7 +120,7 @@
         <artifactId>maven-license-plugin</artifactId>
         <version>1.9.0</version>
         <configuration>
-          <header>http://download.scm-manager.org/licenses/mvn-license.txt</header>
+          <header>https://download.scm-manager.org/licenses/mvn-license.txt</header>
           <includes>
             <include>src/**</include>
             <include>**/test/**</include>
