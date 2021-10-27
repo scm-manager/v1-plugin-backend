@@ -60,7 +60,7 @@ a:link, a:visited {
 color: #33b2e8;
 }
 
-/* Header */ 
+/* Header */
 
 #branding {
 	background: url(../images/scmManagerHero.jpg);
@@ -69,7 +69,7 @@ color: #33b2e8;
     padding: 40px 0 0;
 }
 
-/* Main Content */ 
+/* Main Content */
 
 #main {
     background: #fff;
@@ -84,7 +84,7 @@ color: #33b2e8;
 	margin-bottom: 15px;
 }
 
-/* Blog */ 
+/* Blog */
 
 #content .entry-title, #portfolio .entry-title {
 border: 0;
@@ -133,7 +133,7 @@ border-radius: 5px;
 	border-top:1px solid #ddd;
 	padding-top:30px;
 }
-#sidebar #text-2 .textwidget, #sidebar #text-3 .textwidget{ 
+#sidebar #text-2 .textwidget, #sidebar #text-3 .textwidget{
 	width: 235px;
 	margin: auto;
 	padding: 20px 0;
@@ -160,7 +160,7 @@ font-size: 12px;
 	max-width: 130px;
 }
 #social4i{
-	position: relative; 
+	position: relative;
 	display: block;
 	width: 55%;
 	margin: auto;
@@ -223,4 +223,18 @@ h3.ui-accordion-header {
 }
 .ui-accordion .ui-accordion-header .ui-icon, .ui-state-active .ui-icon {
     background-image: url(https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/images/ui-icons_222222_256x240.png);
+}
+
+
+.notification {
+    background-color: #ffe08a;
+    color: rgba(0,0,0,.7);
+    border-radius: 4px;
+    padding: 1.25rem 2.5rem 1.25rem 1.5rem;
+    margin-bottom: 1rem !important;
+}
+
+.notification a {
+    color: currentColor;
+    text-decoration: underline;
 }
