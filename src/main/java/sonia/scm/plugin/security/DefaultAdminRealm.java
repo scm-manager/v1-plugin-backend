@@ -111,6 +111,11 @@ public class DefaultAdminRealm extends AuthorizingRealm
   {
     Preconditions.checkNotNull(token);
 
+    AdminAccountConfiguration adminAccount = configuration.getAdminAccount();
+    if (adminAccount == null) {
+      throw new AuthenticationException("authentication is disabled");
+    }
+
     UsernamePasswordToken upToken = (UsernamePasswordToken) token;
 
     String username = upToken.getUsername();
@@ -120,9 +125,7 @@ public class DefaultAdminRealm extends AuthorizingRealm
       logger.debug("start authentication for user {}", username);
     }
 
-    AdminAccountConfiguration adminAccount = configuration.getAdminAccount();
-
-    if (!adminAccount.getUsername().equals(adminAccount.getUsername()))
+    if (!adminAccount.getUsername().equals(username))
     {
       throw new UnknownAccountException("unknown account ".concat(username));
     }
